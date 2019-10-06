@@ -19,7 +19,7 @@ public class Student {
     protected void setNumbOfGroup(int numbOfGroup) {
         this.numbOfGroup = numbOfGroup;
     }
-    public void setProgress(int[] progress) {
+    protected void setProgress(int[] progress) {
             this.progress = progress;
     }
 

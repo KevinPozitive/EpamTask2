@@ -24,19 +24,19 @@ public class Clock {
         seconds = 0;
     }
 
-    public void setHours(int hours) {
+    protected void setHours(int hours) {
         if(hours>=0&&hours<24)
             this.hours = hours;
         else
             this.hours = 0;
     }
-    public void setMinutes(int minutes) {
+    protected void setMinutes(int minutes) {
         if(minutes>=0&&minutes<60)
             this.minutes = minutes;
         else
             this.minutes = 0;
     }
-    public void setSeconds(int seconds) {
+    protected void setSeconds(int seconds) {
         if(seconds>=0&&seconds<60)
             this.seconds = seconds;
         else

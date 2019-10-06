@@ -25,34 +25,34 @@ public class MyСounter {
         }
     }
 
-    public int getMax() {
+    protected int getMax() {
         return max;
     }
-    public int getMin() {
+    protected int getMin() {
         return min;
     }
-    public void initialization(int n, int presentIndex){
+    protected void initialization(int n, int presentIndex){
         mas[presentIndex-min] = n;
     }
-    public void growth(){
+    protected void growth(){
         if(presentIndex < max){
             presentIndex++;
             presentValue = mas[presentIndex-min];
         }
         else return;
     }
-    public void reduction(){
+    protected void reduction(){
         if(presentIndex>min){
             presentIndex--;
             presentValue = mas[presentIndex-min];
         }
         else return;
     }
-    public int getPresentValue() {
+    protected int getPresentValue() {
         return presentValue;
     }
 
-    public int[] getMas() {
+    protected int[] getMas() {
         return mas;
     }
 }
