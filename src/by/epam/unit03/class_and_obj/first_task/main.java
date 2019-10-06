@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        Student[] student = new Student[2];
+        Student[] student = new Student[10];
 
 
-        for(int i = 0;i<2;i++){
+        for(int i = 0;i<10;i++){
             in.nextLine();
             student[i] = new Student();
             System.out.println("input name");
@@ -26,7 +26,7 @@ public class main {
             student[i].setProgress(a);
         }
 
-        for(int i = 0;i<2;i++){
+        for(int i = 0;i<10;i++){
             System.out.println(student[i].getSurname()+" "
                     +student[i].getInitials()+" "
                     + student[i].getNumbOfGroup());
@@ -36,7 +36,7 @@ public class main {
         }
         System.out.println("with good marks");
         int m;
-        for(int i = 0;i<2;i++) {
+        for(int i = 0;i<10;i++) {
             m = 0;
             for(int k=0;k<5;k++) {
                 if (student[i].getProgress()[k] < 9) {
