@@ -6,33 +6,33 @@ public class Student {
     private int numbOfGroup;
     private int[]progress;// = new int[5];
 
-    Student(){
+    protected Student(){
         progress = new int[5];
     }
 
-    public void setSurname(String surname) {
+    protected void setSurname(String surname) {
         this.surname = surname;
     }
-    public void setInitials(String initials) {
+    protected void setInitials(String initials) {
         this.initials = initials;
     }
-    public void setNumbOfGroup(int numbOfGroup) {
+    protected void setNumbOfGroup(int numbOfGroup) {
         this.numbOfGroup = numbOfGroup;
     }
     public void setProgress(int[] progress) {
             this.progress = progress;
     }
 
-    public String getSurname() {
+    protected String getSurname() {
         return surname;
     }
-    public String getInitials() {
+    protected String getInitials() {
         return initials;
     }
-    public int getNumbOfGroup() {
+    protected int getNumbOfGroup() {
         return numbOfGroup;
     }
-    public int[] getProgress() {
+    protected int[] getProgress() {
         return progress;
     }
 

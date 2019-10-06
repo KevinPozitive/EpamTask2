@@ -5,23 +5,23 @@ public class Train {
     private int numberTrain;
     private double departureTime;
 
-    public void setDestination(String destination) {
+    protected void setDestination(String destination) {
         this.destination = destination;
     }
-    public void setDepartureTime(double departureTime) {
+    protected void setDepartureTime(double departureTime) {
         this.departureTime = departureTime;
     }
-    public void setNumberTrain(int numberTrain) {
+    protected void setNumberTrain(int numberTrain) {
         this.numberTrain = numberTrain;
     }
 
-    public String getDestination() {
+    protected String getDestination() {
         return destination;
     }
-    public double getDepartureTime() {
+    protected double getDepartureTime() {
         return departureTime;
     }
-    public int getNumberTrain() {
+    protected int getNumberTrain() {
         return numberTrain;
     }
 }

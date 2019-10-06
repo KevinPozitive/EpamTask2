@@ -9,11 +9,11 @@ public class SortingByNameAndTime {
         trains[a] = trains[b];
         trains[b] = tmp;
     }
-    public Train[] getTrains() {
+    protected Train[] getTrains() {
         return trains;
     }
 
-    public SortingByNameAndTime(Train[] trains1){
+    protected SortingByNameAndTime(Train[] trains1){
         trains = trains1;
         boolean needIteration = true;
         while (needIteration){

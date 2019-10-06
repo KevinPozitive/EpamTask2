@@ -7,10 +7,10 @@ public class SortingByNumbers {
         trains[a] = trains[b];
         trains[b] = tmp;
     }
-    public Train[] getTrains() {
+    protected Train[] getTrains() {
         return trains;
     }
-    public SortingByNumbers(Train[] trains1){
+    protected SortingByNumbers(Train[] trains1){
         boolean needIteration = true;
         trains = trains1;
         while(needIteration){
