@@ -5,6 +5,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/* I have some asks. For example: I can use two threads in this task, but is it necessary?
+ first thread will work and use some data(hours, minutes,seconds)
+ second thread will wait some date from user, and when hi will input data
+ second thread stopped first thread, update data, and after will free second thread.
+ Maybe have simpler and more logical solution but I have not used threads and synchronize
+ of threads for a long time, need to remember.
+ */
+
 public class Clock {
     private int hours;
     private int minutes;
@@ -35,5 +43,5 @@ public class Clock {
             this.seconds = 0;
     }
 
-    
+
 }
