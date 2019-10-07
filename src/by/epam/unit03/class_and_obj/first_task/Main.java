@@ -2,7 +2,7 @@ package by.epam.unit03.class_and_obj.first_task;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Student[] student = new Student[10];

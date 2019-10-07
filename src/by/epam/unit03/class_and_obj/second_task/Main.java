@@ -2,7 +2,7 @@ package by.epam.unit03.class_and_obj.second_task;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         Train[] trains = new Train[5];
