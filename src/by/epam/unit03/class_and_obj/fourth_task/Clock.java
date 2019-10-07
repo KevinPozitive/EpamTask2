@@ -23,6 +23,22 @@ public class Clock {
         minutes = 0;
         seconds = 0;
     }
+    protected Clock(int hours,int minutes,int seconds){
+        if(hours>=0&&hours<24)
+            this.hours = hours;
+        else
+            this.hours = 0;
+
+        if(minutes>=0&&minutes<60)
+            this.minutes = minutes;
+        else
+            this.minutes = 0;
+
+        if(seconds>=0&&seconds<60)
+            this.seconds = seconds;
+        else
+            this.seconds = 0;
+    }
 
     protected void setHours(int hours) {
         if(hours>=0&&hours<24)
@@ -42,6 +58,4 @@ public class Clock {
         else
             this.seconds = 0;
     }
-
-
 }
